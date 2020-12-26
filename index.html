@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saas-Landing</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- Css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- Line Icons -->
+    <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
+    <!-- WOW Js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Fancy Box -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+
+</head>
+
+<body>
+    <div class="onload">
+        <div class="dot"></div>
+    </div>
+    <div class="wrapper">
+        <!--Start Header -->
+        <div class="header">
+            <div class="container">
+                <div class="header__menu">
+                    <div class="header__menu-logo">
+                        <img src="assets/images/logo/logo-white.png" alt="">
+                    </div>
+                    <div class="header__menu-toggler" onclick="menuOpen()">
+                        <span class="toggler__first"></span>
+                        <span class="toggler__second"></span>
+                        <span class="toggler__third"></span>
+                        <span class="toggler__fourth"></span>
+                    </div>
+                    <ul class="header__menu-list">
+                        <div class="close__icon" onclick="menuClose()">
+                            <div class="cross">
+                                <spam class="top"></spam>
+                                <span class="bottom"></span>
+                            </div>
+                        </div>
+                        <div class="navmenu">
+                            <li class="list__item">
+                                <a href="#" class="list__item-link">HOME</a>
+                                <ul class="dropdown-content">
+                                    <li><a href="creative-agency.html"><i class="lni lni-diamond"></i>
+                                            <span>Creative Agency <span>for creative agency</span></span></a>
+                                    </li>
+                                    <li><a href="corporate-business.html"><i class="lni lni-bolt"></i>
+                                            <span>Corporate Business <span>for corporate business.</span></span></a>
+                                    </li>
+                                    <li><a href="seo-business.html"><i class="lni lni-bulb"></i>
+                                            <span>SEO Business <span>for seo business.</span></span></a>
+                                    </li>
+                                    <li><a href="sass-landing.html"><i class="lni lni-cog"></i>
+                                            <span>Saas Landing <span>for software as a service.</span></span></a>
+                                    </li>
+                                </ul>
+                                <span class="trigger"><i class="lni lni-chevron-down"></i></span>
+                            </li>
+                            <li class="list__item list__item-megamenu">
+                                <a href="#" class="list__item-link">PAGES</a>
+                                <div class="megamenu">
+                                    <div class="row">
+                                        <div class="col-lg-4 single-mega">
+                                            <div class="megamenu__image">
+                                                <img src="assets/images/megamenuImage/2.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 single-mega">
+                                            <ul>
+                                                <li><a href="about-standard.html">About Standard</a></li>
+                                                <li><a href="about-creative.html">About Creative</a></li>
+                                                <li><a href="features.html">Features</a></li>
+                                                <li><a href="service-standard.html">Service Standard</a></li>
+                                                <li><a href="service-creative.html">Service Creative</a></li>
+                                                <li><a href="service-creative.html">Pricing Plan</a></li>
+                                                <li><a href="faq.html">FAQ</a></li>
+                                                <li><a href="team.html">Team</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-4 single-mega">
+                                            <ul>
+                                                <li><a href="contact.html">Contact</a></li>
+                                                <li><a href="reviews.html">Reviews</a></li>
+                                                <li><a href="register.html">Register</a></li>
+                                                <li><a href="login.html">Login</a></li>
+                                                <li><a href="coming-soon.html">Coming Soon</a></li>
+                                                <li><a href="forget-password.html">Forget Password</a></li>
+                                                <li><a href="newsletter.html">Newsletter</a></li>
+                                                <li><a href="404.html">404 - Error</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="trigger"><i class="lni lni-chevron-down"></i></span>
+                            </li>
+                            <li class="list__item">
+                                <a href="#" class="list__item-link">WORKS</a>
+                                <ul class="dropdown-content">
+                                    <li><a href="portfolio-standard.html">Portfolio Standard</a></li>
+                                    <li><a href="portfolio-creative.html">Portfolio Creative</a></li>
+                                    <li><a href="portfolio-full-width.html">Portfolio Full Width</a></li>
+                                    <li><a href="portfolio-details-one.html">Portfolio Details One</a></li>
+                                    <li><a href="portfolio-details-two.html">Portfolio Details Two</a></li>
+                                    <li><a href="portfolio-details-three.html">Portfolio Details Three</a></li>
+                                    <li><a href="portfolio-details-four.html">Portfolio Details Four</a></li>
+                                </ul>
+                                <span class="trigger"><i class="lni lni-chevron-down"></i></span>
+                            </li>
+                            <li class="list__item">
+                                <a href="#" class="list__item-link">SHOP</a>
+                                <ul class="dropdown-content" id="shop">
+                                    <li><a href="shop-fullwidth.html">Shop Fullwidth</a></li>
+                                    <li><a href="shop-sidebar.html">Shop Sidebar</a></li>
+                                    <li><a href="single-product.html">Product Details</a></li>
+                                    <li><a href="cart.html">Cart</a></li>
+                                    <li><a href="checkout.html">Checkout</a></li>
+                                </ul>
+                                <span class="trigger"><i class="lni lni-chevron-down"></i></span>
+                            </li>
+                            <li class="list__item">
+                                <a href="#" class="list__item-link">BLOG</a>
+                                <ul class="dropdown-content">
+                                    <li><a href="blog-card.html">Blog Card</a></li>
+                                    <li><a href="blog-card-sidebar.html">Blog Card Sidebar</a></li>
+                                    <li><a href="blog-full.html">Blog Full</a></li>
+                                    <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
+                                    <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
+                                    <li><a href="blog-details-full.html">Blog Details One</a></li>
+                                    <li><a href="blog-details-left-sidebar.html">Blog Details Two</a></li>
+                                    <li><a href="blog-details-right-sidebar.html">Blog Details Three</a></li>
+                                </ul>
+                                <span class="trigger"><i class="lni lni-chevron-down"></i></span>
+                            </li>
+                            <li class="list__item"><a href="#" class="list__item-link">CONTACT</a>
+                            <li class="list__item" id="button--bgYellow"><a href="" class="list__item-link">Buy Now</a>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--End Header -->
+        <!--Start Banner -->
+        <div class="banner">
+            <div class="backgroundShape">
+                <img class="backgroundShape__image" src="assets/images/backgroundShape/hero-3.png" alt="">
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="banner__text">
+                            <div class="banner__text-title">Faster up your website with <span
+                                    class="title__seo">SEO</span></div>
+                            <div class="banner__text-subtitle">It's built with
+                                <span id="words-wrapper"></span>
+                            </div>
+                            <div class="banner__text-description">It's crafted with the latest trend of design & coded
+                                with all modern approaches.</div>
+                            <div class="banner__text-button">
+                                <div class="button__viewpage"><a href="" class="button__viewpage-link">View Page</a>
+                                </div>
+                                <div class="button__feature"><a href="" class="button__feature-link">See Feature</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner__ecaps">
+                <img class="banner__ecaps-ecaps" src="assets/images/bannerImages/16.png" alt="">
+                <img class="banner__ecaps-income" src="assets/images/bannerImages/18.png" alt="">
+            </div>
+        </div>
+        <!--End Banner -->
+        <!--Start Partner Top -->
+        <div class="partnerTop">
+            <div class="container">
+                <div id="partnerTop" class="partnerTop__item owl-carousel owl-theme">
+                    <img src="assets/images/partnerImages/1.png" alt="" class="partnerTop__item-image">
+                    <img src="assets/images/partnerImages/2.png" alt="" class="partnerTop__item-image">
+                    <img src="assets/images/partnerImages/3.png" alt="" class="partnerTop__item-image">
+                    <img src="assets/images/partnerImages/4.png" alt="" class="partnerTop__item-image">
+                    <img src="assets/images/partnerImages/5.png" alt="" class="partnerTop__item-image">
+                    <img src="assets/images/partnerImages/6.png" alt="" class="partnerTop__item-image">
+                </div>
+            </div>
+        </div>
+        <!--End Partner Top -->
+        <!--Start About -->
+        <div class="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <div class="about__info">
+                            <h3 class="about__info-subtitle">ABOUT US</h3>
+                            <h1 class="about__info-title">Discover, Create & Publish</h1>
+                            <span class="about__info-description">It's crafted with the latest trend of design & coded
+                                with all modern approaches. It's a robust & multi-dimensional usable template.</span>
+                            <p class="about__info-subdescription">It is a long established fact that a reader will be
+                                distracted by the readable content of a page when looking at its layout. The point of
+                                using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
+                            <img src="assets/images/aboutUsImages/signature.png" alt="" class="about__info-signature">
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="about__image">
+                            <img src="assets/images/aboutUsImages/hero-8.png" alt="" class="about__image-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End About -->
+        <!--Start Completed Project -->
+        <div class="completedProject">
+            <div class="container">
+                <div class="circleAnimation">
+                    <div class="circle1"></div>
+                    <div class="circle2"></div>
+                    <div class="circle3"></div>
+                    <div class="circle4"></div>
+                </div>
+                <h1 class="completedProject__title">We already completed <span
+                        class="completedProject__title-number">470</span> projects <br> successfully and more counting.
+                </h1>
+                <div class="row">
+                    <div class="col-12 col-sm-4">
+                        <div class="completedProject__number wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="100ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 100ms; animation-name: fadeInUp;">
+                            <h2 class="completedProject__number-circle" id="green"><span class="counters" data-target="470">0</span>+
+                            </h2>
+                            <p class="completedProject__number-description">Total Projects</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-4">
+                        <div class="completedProject__number wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="100ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 300ms; animation-name: fadeInUp;">
+                            <h2 class="completedProject__number-circle" id="blue"><span class="counters" data-target="21">0</span></h2>
+                            <p class="completedProject__number-description">Team Members</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-4">
+                        <div class="completedProject__number wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="100ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 500ms; animation-name: fadeInUp;">
+                            <h2 class="completedProject__number-circle" id="purple"><span class="counters" data-target="3168">0</span>
+                            </h2>
+                            <p class="completedProject__number-description">Coffee Served</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Complete Project -->
+        <div class="container">
+            <hr>
+        </div>
+        <!--Start Solution -->
+        <div class="solution">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <div class="solution__image">
+                            <img src="assets/images/solutionImages/hero-3.png" alt=""
+                                class="solution__image-image"></img>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="solution__info">
+                            <h1 class="solution__info-title">The perfect solution for your saas software</h1>
+                            <p class="solution__info-description">It's crafted with the latest trend of design & coded
+                                with all modern approaches. It's a robust & multi-dimensional usable template.</p>
+                            <ul class="solution__info-list" id="solution__list">
+                                <li class="list__item"><i class="lni lni-checkmark-circle"
+                                        style="margin-right: .5rem;"></i>Bootstrap 5</li>
+                                <li class="list__item"><i class="lni lni-checkmark-circle"
+                                        style="margin-right: .5rem;"></i>Fully Responsive</li>
+                                <li class="list__item"><i class="lni lni-checkmark-circle"
+                                        style="margin-right: .5rem;"></i>Sass Support</li>
+                                <li class="list__item"><i class="lni lni-checkmark-circle"
+                                        style="margin-right: .5rem;"></i>Valid HTML5 & CSS3</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Solution -->
+        <div class="container">
+            <hr>
+        </div>
+        <!--Start Technology -->
+        <div class="technology">
+            <!-- Start Feature Side Thumbnail -->
+            <div class="featureSideThumbnail">
+                <img src="assets/images/featureSideThumbnail/19.png" alt="">
+            </div>
+            <!-- End Feature Side Thumbnail -->
+            <div class="container">
+                <div class="technology__container">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="technology__container-item">
+                                <div class="item__icon">01.</div>
+                                <div class="item__text">
+                                    <div class="item__text-title">Fully Responsive</div>
+                                    <div class="item__text-desc">It's crafted with the latest trend of design & coded
+                                        with all modern approaches</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="technology__container-item">
+                                <div class="item__icon">02.</div>
+                                <div class="item__text">
+                                    <div class="item__text-title">Home Variations</div>
+                                    <div class="item__text-desc">It's crafted with the latest trend of design & coded
+                                        with all modern approaches</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="technology__container-item">
+                                <div class="item__icon">03.</div>
+                                <div class="item__text">
+                                    <div class="item__text-title">Sass Support</div>
+                                    <div class="item__text-desc">It's crafted with the latest trend of design & coded
+                                        with all modern approaches</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="technology__container-item">
+                                <div class="item__icon">04.</div>
+                                <div class="item__text">
+                                    <div class="item__text-title">Valid HTML5 & CSS3</div>
+                                    <div class="item__text-desc">It's crafted with the latest trend of design & coded
+                                        with all modern approaches</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="technology__container-item">
+                                <div class="item__icon">05.</div>
+                                <div class="item__text">
+                                    <div class="item__text-title">Pug Support</div>
+                                    <div class="item__text-desc">It's crafted with the latest trend of design & coded
+                                        with all modern approaches</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="technology__container-item">
+                                <div class="item__icon">06.</div>
+                                <div class="item__text">
+                                    <div class="item__text-title">Bootstrap 4</div>
+                                    <div class="item__text-desc">It's crafted with the latest trend of design & coded
+                                        with all modern approaches</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Technology -->
+        <!--Start Presentation -->
+        <div class="presentation">
+            <div class="presentation__overlay"></div>
+            <div class="presentation__content">
+                <div class="presentation__content-video">
+                    <a class="video-play-btn" data-fancybox = "video" href="https://www.youtube.com/watch?v=lFGvqvPh5jI"><i id="play"
+                            class="lni lni-play"></i>
+                        <span class="video-sonar"></span></a>
+                </div>
+                <h2 class="presentation__content-title">View our presentation</h2>
+            </div>
+        </div>
+        <!--End Presentation -->
+        <!--Start Service -->
+        <div class="service">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-5 col-xl-4">
+                        <div class="service__item wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="100ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 100ms; animation-name: fadeInUp;">
+                            <div class="service__item-icon" id="purple">
+                                <img class="icon__image" src="" alt=""><i id="icon" class="lni lni-android"
+                                    style="font-size:2rem;"></i>
+                            </div>
+                            <h1 class="item__title">Mobile Apps Developement</h1>
+                            <p class="item__description">It's crafted with the latest trend of design.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-5 col-xl-4">
+                        <div class="service__item  wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="100ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 200ms; animation-name: fadeInUp;">
+                            <div class="service__item-icon" id="green">
+                                <img class="item__image" src="" alt=""><i id="icon" class="lni lni-layout"
+                                    style="font-size:2rem;"></i>
+                            </div>
+
+                            <h1 class="item__title">Modern Website Developement</h1>
+                            <p class="item__description">It's crafted with the latest trend of design.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-5 col-xl-4">
+                        <div class="service__item wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="100ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 300ms; animation-name: fadeInUp;">
+                            <div class="service__item-icon" id="yellow">
+                                <img class="item__image" src="" alt=""><i id="icon" class="lni lni-pie-chart"
+                                    style="font-size:2rem;"></i>
+                            </div>
+
+                            <h1 class="item__title">Digital Content & SEO Marketing</h1>
+                            <p class="item__description">It's crafted with the latest trend of design.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-5 col-xl-4">
+                        <div class="service__item wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="100ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 400ms; animation-name: fadeInUp;">
+                            <div class="service__item-icon" id="green">
+                                <img class="item__image" src="" alt=""><i id="icon" class="lni lni-wordpress"
+                                    style="font-size:2rem;"></i>
+                            </div>
+
+                            <h1 class="item__title">WordPress 5.0 Ultimate Solution</h1>
+                            <p class="item__description">It's crafted with the latest trend of design.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-5 col-xl-4">
+                        <div class="service__item wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="100ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 500ms; animation-name: fadeInUp;">
+                            <div class="service__item-icon" id="yellow">
+                                <img class="item__image" src="" alt=""><i id="icon" class="lni lni-sun"
+                                    style="font-size:2rem;"></i>
+                            </div>
+
+                            <h1 class="item__title">Business Idea & Creative Leads</h1>
+                            <p class="item__description">It's crafted with the latest trend of design.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-5 col-xl-4">
+                        <div class="service__item wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="100ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 600ms; animation-name: fadeInUp;">
+                            <div class="service__item-icon" id="purple">
+                                <img class="item__image" src="" alt=""><i id="icon" class="lni lni-play"
+                                    style="font-size:2rem;"></i>
+                            </div>
+                            <h1 class="item__title">Tutorial: Learning for future</h1>
+                            <p class="item__description">It's crafted with the latest trend of design.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Service -->
+        <!--Start Question -->
+        <div class="question">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <div class="question__text">
+                            <div class="question__text-title">Questions & Answers</div>
+                            <div class="question__text-header">
+                                <div class="header__content">
+                                    <div class="button">
+                                        <button>How can I purchase Saasbox?</button>
+                                    </div>
+                                    <div class="content">
+                                        <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                            richardson ad squid.
+                                            3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
+                                            quinoa nesciunt eiusmod.</p>
+                                    </div>
+                                </div>
+                                <div class="header__content">
+                                    <div class="button">
+                                        <button>What are the minimum requirements?</button>
+                                    </div>
+                                    <div class="content">
+                                        <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                            richardson ad squid.
+                                            3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
+                                            quinoa nesciunt eiusmod.</p>
+                                    </div>
+                                </div>
+                                <div class="header__content">
+                                    <div class="button">
+                                        <button>What is the regular license?</button>
+                                    </div>
+                                    <div class="content">
+                                        <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                            richardson ad squid.
+                                            3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
+                                            quinoa nesciunt eiusmod.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="question__image">
+                            <img src="assets/images/questionImages/hero-4.png   " alt="" class="question__image-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Question -->
+        <!--Start Price -->
+        <div class="price">
+            <div class="container">
+                <div class="price__info">
+                    <h3 class="price__info-subtitle">PRICING TABLE</h3>
+                    <h1 class="price__info-title">Easy & Simple Plan</h1>
+                    <p class="price__info-description">It's crafted with the latest trend of design & coded with all
+                        modern <br> approaches. It's a robust & multi-dimensional usable template.</p>
+                </div>
+                <div class="price__table">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="price__table-basic">
+                                <div class="basic__priceHead">
+                                    <div class="basic__priceHead-price">
+                                        <h5 class="price__basic">BASIC</h5>
+                                        <h2 class="price__price">$23</h2>
+                                        <p class="price__description">per month</p>
+                                    </div>
+                                    <div class="basic__priceHead-icon"><i class="lni lni-pizza"
+                                            style="font-size:4rem;color: #fdd76e;"></i></div>
+                                </div>
+                                <div class="basic__priceDesc">
+                                    <ul class="basic__priceDesc-list">
+                                        <li class="list__item"><i class="lni lni-checkmark-circle"
+                                                style="margin-right: .5rem;color:blue;"></i>1 Month Usage</li>
+                                        <li class="list__item"><i class="lni lni-checkmark-circle"
+                                                style="margin-right: .5rem;color:blue;"></i>Lifetime Updates</li>
+                                        <li class="list__item"><i class="lni lni-cross-circle"
+                                                style="margin-right: .5rem;color:red;"></i>1 Website License</li>
+                                        <li class="list__item"><i class="lni lni-cross-circle"
+                                                style="margin-right: .5rem;color:red;"></i>Free Support</li>
+                                        <li class="list__item"><i class="lni lni-cross-circle"
+                                                style="margin-right: .5rem;color:red;"></i>Download New Release</li>
+                                    </ul>
+                                </div>
+                                <div class="basic__priceButton">
+                                    <div class="basic__priceButton-button"><a href="#" class="button__link">Choose
+                                            Plan</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="price__table-standard">
+                                <div class="standard__priceHead">
+                                    <div class="standard__priceHead-price">
+                                        <h5 class="price__standard">STANDARD</h5>
+                                        <h2 class="price__price">$98</h2>
+                                        <p class="price__description">per month</p>
+                                    </div>
+                                    <div class="standard__priceHead-icon"><i class="lni lni-burger"
+                                            style="font-size:4rem;color:#fdd76e;"></i></div>
+                                </div>
+                                <div class="standard__priceDesc">
+                                    <ul class="standard__priceDesc-list">
+                                        <li class="list__item"><i class="lni lni-checkmark-circle"
+                                                style="margin-right: .5rem;color:blue;"></i>1 Month Usage</li>
+                                        <li class="list__item"><i class="lni lni-checkmark-circle"
+                                                style="margin-right: .5rem;color:blue;"></i>Lifetime Updates</li>
+                                        <li class="list__item"><i class="lni lni-checkmark-circle"
+                                                style="margin-right: .5rem;color:blue;"></i>1 Website License</li>
+                                        <li class="list__item"><i class="lni lni-cross-circle"
+                                                style="margin-right: .5rem;color:red;"></i>Free Support</li>
+                                        <li class="list__item"><i class="lni lni-cross-circle"
+                                                style="margin-right: .5rem;color:red;"></i>Download New Release</li>
+                                    </ul>
+                                </div>
+                                <div class="standard__priceButton">
+                                    <div class="standard__priceButton-button"><a href="#" class="button__link">Choose
+                                            Plan</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Price -->
+        <!--Start News -->
+        <div class="news">
+            <div class="container">
+                <div class="news__info">
+                    <div class="news__info-head">
+                        <h3 class="head__subtitle">LATEST INFO</h3>
+                        <h1 class="head__title">All Trending News</h1>
+                        <p class="head__description">It's crafted with the latest trend of design & coded with all
+                            modern <br> approaches. It's a robust & multi-dimensional usable template.</p>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="news__info-item wow fadeInUp" data-wow-delay="200ms" data-wow-duration="500ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 200ms; animation-name: fadeInUp;">
+                                <div class="item__imagesContainer">
+                                    <img class="item__imagesContainer-images" src="assets/images/blog/blog4.jpg" alt="">
+                                </div>
+                                <span class="item__category">News</span>
+                                <h4 class="item__title">Seven ways agency can improve your business.</h4>
+                                <p class="item__time"><i class="lni lni-timer" style="margin-right: .5rem;"></i>2 min
+                                    read</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="news__info-item wow fadeInUp" data-wow-delay="300ms" data-wow-duration="500ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 300ms; animation-name: fadeInUp;">
+                                <div class="item__imagesContainer">
+                                    <div class="item__imagesContainer-overlay"><a class="video-play-btn" data-fancybox = "video"
+                                            href="https://www.youtube.com/watch?v=lFGvqvPh5jI"><i id="play"
+                                                class="lni lni-play"></i></a></div>
+                                    <img class="item__imagesContainer-images" id="video"
+                                        src="assets/images/blog/blog5.jpg" alt="">
+                                </div>
+                                <span class="item__category">Agency</span>
+                                <h4 class="item__title">The reason why everyone love business.</h4>
+                                <p class="item__time"><i class="lni lni-timer" style="margin-right: .5rem;"></i>4 min
+                                    read</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="news__info-item wow fadeInUp" data-wow-delay="800ms" data-wow-duration="500ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 800ms; animation-name: fadeInUp;">
+                                <div class="item__imagesContainer">
+                                    <img class="item__imagesContainer-images" src="assets/images/blog/blog6.jpg" alt="">
+                                </div>
+                                <span class="item__category">Trend</span>
+                                <h4 class="item__title">Seven ways agency can improve your business.</h4>
+                                <p class="item__time"><i class="lni lni-timer" style="margin-right: .5rem;"></i>3 min
+                                    read</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End News -->
+        <!--Start PartnerBottom -->
+        <div class="partnerBottom">
+            <div class="container">
+                <div id="partnerBottom" class="partnerBottom__item owl-carousel owl-theme">
+                    <img src="assets/images/partnerImages/1.png" alt="" class="partnerBottom__item-image">
+                    <img src="assets/images/partnerImages/2.png" alt="" class="partnerBottom__item-image">
+                    <img src="assets/images/partnerImages/3.png" alt="" class="partnerBottom__item-image">
+                    <img src="assets/images/partnerImages/4.png" alt="" class="partnerBottom__item-image">
+                    <img src="assets/images/partnerImages/5.png" alt="" class="partnerBottom__item-image">
+                    <img src="assets/images/partnerImages/6.png" alt="" class="partnerBottom__item-image">
+                </div>
+            </div>
+        </div>
+        <!--End PartnerBottom -->
+        <!-- Start Cookies -->
+        <div class="cookiealert" onclick="cookieClose()">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="cookiealert__cookie">This site uses cookies. We use cookies to ensure you get the best
+                            experience on our website. For details, please check our <a href="#" target="_blank">Privacy
+                                Policy</a></p>
+                    </div>
+                    <div class="col-12">
+                        <button class="cookiealert__button" aria-label="Close">I agree</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Cookies -->
+        <!--Start Footer -->
+        <div class="footer">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-12 col-md-10 col-lg-3">
+                        <div class="footer__logo">
+                            <img src="assets/images/logo/logo-white.png" alt="" class="footer__logo-logo"></img>
+                            <p class="footer__logo-description">It's crafted with the latest trend of design & coded
+                                with all modern approaches.</p>
+                            <form action="#" class="footer__logo-input">
+                                <input type="text" placeholder="Enter email & press enter">
+                            </form>
+
+                            <ul class="footer__logo-social">
+
+                                <li class="social__item"><a href="#" class="item-link"><i
+                                            class="fa fa-facebook"></i></a></li>
+                                <li class="social__item"><a href="#" class="item-link"><i class="fa fa-twitter"></i></a>
+                                </li>
+                                <li class="social__item"><a href="#" class="item-link"><i
+                                            class="fa fa-instagram"></i></a></li>
+                                <li class="social__item"><a href="#" class="item-link"><i
+                                            class="fa fa-linkedin"></i></a></li>
+                                <li class="social__item"><a href="#" class="item-link"><i class="fa fa-youtube"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+                        <div class="footer__links">
+                            <ul class="footer__links-list">
+                                <li class="list__item" id="importantLinks">Important Links</li>
+                                <li class="list__item"><a href="#" class="list__item-link">Terms & Conditions</a></li>
+                                <li class="list__item"><a href="#" class="list__item-link">About Licences</a></li>
+                                <li class="list__item"><a href="#" class="list__item-link">Help & Support</a></li>
+                                <li class="list__item"><a href="#" class="list__item-link">Careers</a></li>
+                                <li class="list__item"><a href="#" class="list__item-link">Privacy Policy</a></li>
+                                <li class="list__item"><a href="#" class="list__item-link">Community & Forum</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+                        <div class="footer__products">
+                            <ul class="footer__products-list">
+                                <li class="list__item" id="ourProducts">Our Products</li>
+                                <li class="list__item"><a href="#" class="list__item-link">Apland Landing</a></li>
+                                <li class="list__item"><a href="#" class="list__item-link">Ecaps Admin</a></li>
+                                <li class="list__item"><a href="#" class="list__item-link">Bigshop Ecommerce</a></li>
+                                <li class="list__item"><a href="#" class="list__item-link">Classy Multipurpose</a></li>
+                                <li class="list__item"><a href="#" class="list__item-link">Educamp Education</a></li>
+                                <li class="list__item"><a href="#" class="list__item-link">Champ Portfolio</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+                        <div class="footer__account">
+                            <ul class="footer__account-list">
+                                <li class="list__item" id="myAccount">My Account</li>
+                                <li class="list__item"><a href="#" class="list__item-link">Community & Forum</a></li>
+                                <li class="list__item"><a href="#" class="list__item-link">About Licences</a></li>
+                                <li class="list__item"><a href="#" class="list__item-link">Careers</a></li>
+                                <li class="list__item"><a href="#" class="list__item-link">Terms & Conditions</a></li>
+                                <li class="list__item"><a href="#" class="list__item-link">Privacy Policy</a></li>
+                                <li class="list__item"><a href="#" class="list__item-link">Help & Support</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="footer__rights">
+                    <div class="row">
+                        <div class="footer__rights-rights col-12 col-md-6 col-lg-5">All rights reserved by <a href="#" class="rights__link">Designing
+                            World</a>
+                        </div>
+
+                        <ul class="footer__rights-list col-12 col-md-6 col-lg-5">
+                            <li class="list__item"><a href="#" class="list__item-link">Privacy Policy</a></li>
+                            <li class="list__item"><a href="#" class="list__item-link">Terms & Conditions</a></li>
+                            <li class="list__item"><a href="#" class="list__item-link">Get Support</a></li>
+                        </ul>
+                        <div class="footer__rights-language col-12 col-lg-2">
+                            <button id="language__button" onclick="languageOpen()">Language<i class="lni lni-chevron-up"></i></button> 
+                            <div class="language__dropdown">
+                                <a href="#">
+                                    <img src="assets/images/flags/sa.svg" alt="">
+                                    <span>Arabic</span>
+                                </a>
+                                <a href="#">
+                                    <img src="assets/images/flags/bd.svg" alt="">
+                                    <span>Bengali</span>
+                                </a>
+                                <a href="#">
+                                    <img src="assets/images/flags/us.svg" alt="">
+                                    <span>English</span>
+                                </a>
+                                <a href="#">
+                                    <img src="assets/images/flags/my.svg" alt="">
+                                    <span>Malay</span>
+                                </a>
+                                <a href="#">
+                                    <img src="assets/images/flags/es.svg" alt="">
+                                    <span>Spanish</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!--End Footer -->
+    </div>
+    <a id="scrollUp" style="position: fixed; z-index: 2147483647; display: none;" onclick="scrollToTop()"><i
+            class="lni lni-chevron-up" style="margin-top:10px;"></i></a>
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
