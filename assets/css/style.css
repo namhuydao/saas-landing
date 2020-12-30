@@ -2047,6 +2047,11 @@ hr{
     background-color: #025ce2;
     border-color: #0257d5;
 }
+@media screen and (max-width:450px){
+    .cookiealert{
+        width: 90vw;
+    }
+}
 /*========================= 16, Footer =========================*/
 .footer{
     padding-top: 120px;
