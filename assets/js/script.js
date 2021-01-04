@@ -4,24 +4,10 @@ $(window).on('load', function(event) {
 });
 
 //Header
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  var x = document.getElementsByClassName("header")[0];
-  if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10 
-    || window.pageYOffset > 10) {
-    x.classList.add("sticky");
-  } else {
-    x.classList.remove("sticky");
-  }
-  var y = document.getElementById("scrollUp");
-  if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000
-    || window.pageYOffset > 1000) {
-    y.style.display = "block";
-  } else {
-    y.style.display = "none";
-  }
-}
+let header = document.querySelector(".header");
+window.addEventListener('scroll', () => {
+  header.classList.toggle('sticky', window.scrollY > 0)
+})
 
 function menuOpen() {
   var x = document.getElementsByClassName("header__menu-list")[0];
@@ -249,10 +235,15 @@ function languageOpen(){
 }
 
 //Back To Top
-function scrollToTop(){
+let toTop = document.querySelector("#scrollUp");
+toTop.addEventListener('click', () => {
   window.scrollTo({
     top: 0,
     behavior: 'smooth'
   })
-}
+})
+// Window onscroll
+window.addEventListener('scroll', () => {
+  toTop.classList.toggle('show', window.scrollY > 300)
+})
 
